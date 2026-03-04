@@ -5,7 +5,10 @@ function createGrid(squares){
         const grid = document.createElement("div");
         grid.id = "grid-element";
         container.appendChild(grid);
+        grid.addEventListener("mouseover", ()=>{
+            grid.style.background = "lightblue";
+        })
     }
 }
 
-createGrid(256);
+createGrid(2500);
