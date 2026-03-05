@@ -12,22 +12,22 @@ function createGrid(squares){
         container.appendChild(grid);
         grid.addEventListener("mouseover", ()=>{
             if(mode === 1){
-                grid.style.opacity = '90%';
+                grid.style.opacity = '99%';
                 grid.style.background = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
             }
             else if(mode === 2){
-                if(window.getComputedStyle(grid).getPropertyValue("opacity") == 0.9){
+                if(window.getComputedStyle(grid).getPropertyValue("opacity") == 0.99){
                     grid.style.opacity = '10%';
                 }
                 else{
                     let opacity = window.getComputedStyle(grid).getPropertyValue("opacity");
                     opacity *= 100;
-                    opacity += 11;
+                    opacity += 10;
                     grid.style.opacity = `${opacity}%`;
                 }
             }
             else {
-                grid.style.opacity = '90%';
+                grid.style.opacity = '99%';
                 grid.style.background = 'black';
             }
         })
