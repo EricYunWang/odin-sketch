@@ -3,8 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    gap: 40px;
+    gap: 30px;
 }
 
 button{
@@ -18,8 +17,8 @@ button{
     box-sizing: border-box; 
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     margin: 0 auto;
 }
 
